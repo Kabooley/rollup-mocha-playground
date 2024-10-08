@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "noEmit": true,
+        "module": "ESNext",
+        "target": "ES2016",
+        "moduleResolution": "Bundler",
+        "lib": ["esnext", "dom", "WebWorker"]
+    }
+}

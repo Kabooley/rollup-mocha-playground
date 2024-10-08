@@ -1,0 +1,34 @@
+{
+    "name": "mocha-playground",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "test-browser": "rollup --config=rollup.config.js --input=./browser/index.test.ts && http-server ./ --port=8080 -c-1 -o ./output/index.html",
+        "clean": "rm -rf ./output/*"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^28.0.0",
+        "@rollup/plugin-html": "^1.0.4",
+        "@rollup/plugin-node-resolve": "^15.3.0",
+        "@rollup/plugin-typescript": "^12.1.0",
+        "@types/chai": "^5.0.0",
+        "@types/mocha": "^10.0.8",
+        "chai": "^5.1.1",
+        "comlink": "^4.4.1",
+        "http-server": "^14.1.1",
+        "idb-keyval": "^6.2.1",
+        "mocha": "^10.7.3",
+        "rollup": "^4.24.0",
+        "semver": "^7.6.3",
+        "tslib": "^2.7.0",
+        "typescript": "^5.6.2"
+    },
+    "type": "module",
+    "dependencies": {
+        "@surma/rollup-plugin-off-main-thread": "^2.2.3"
+    }
+}
